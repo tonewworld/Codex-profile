@@ -1,0 +1,33 @@
+# Credentials and identity
+auth.json
+*.pem
+*.key
+.env
+
+# Codex state and local history
+*.sqlite
+*.sqlite-*
+*.jsonl
+logs/
+sessions/
+archived_sessions/
+attachments/
+shell_snapshots/
+thread-writer-locks/
+ipc/
+process_manager/
+mcp-oauth-locks/
+
+# Machine-generated caches and installation state
+.tmp/
+tmp/
+cache/
+plugins/
+vendor_imports/
+computer-use/
+visualizations/
+.DS_Store
+installation_id
+version.json
+models_cache.json
+.codex-global-state.json

@@ -1,0 +1,41 @@
+# 复制需要的字段到 ~/.codex/config.toml。
+# 不要直接覆盖已有配置；Codex Desktop 会维护部分运行时设置。
+
+model = "gpt-5.6-luna"
+model_reasoning_effort = "medium"
+service_tier = "default"
+
+[desktop]
+conversationDetailMode = "STEPS_COMMANDS"
+ambient-suggestions-enabled = false
+localeOverride = "zh-CN"
+appearanceTheme = "system"
+followUpQueueMode = "queue"
+show-context-window-usage = true
+git-branch-prefix = "LL/"
+
+[features]
+js_repl = false
+rmcp_client = true
+
+# 按已安装插件保留需要启用的条目。
+[plugins."browser@openai-bundled"]
+enabled = true
+
+[plugins."documents@openai-primary-runtime"]
+enabled = true
+
+[plugins."spreadsheets@openai-primary-runtime"]
+enabled = true
+
+[plugins."presentations@openai-primary-runtime"]
+enabled = true
+
+[plugins."visualize@openai-bundled"]
+enabled = true
+
+[plugins."sites@openai-bundled"]
+enabled = true
+
+[plugins."pdf@openai-primary-runtime"]
+enabled = true
